@@ -10,9 +10,10 @@
 var twoSum = function(nums, target) {
   var length = nums.length;
   var comp = [];
+  
   for (i = 0; i < length; i++) {
     var idx = comp.indexOf(nums[i]),
-      num2 = target - nums[i];
+        num2 = target - nums[i];
     if (idx == -1) {
       comp.push(num2);
     } else {
